@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Classroom Check-In</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="welcome_text">Which classroom are you taking today?</string>
+    <string name="n35">35</string>
+    <string name="n37">37</string>
+    <string name="n39">39</string>
+    <string name="n41">41</string>
+    <string name="n43">43</string>
+    <string name="teacher">Teacher:</string>
+    <string name="date">Date:</string>
+    <string name="startTime">Start time:</string>
+    <string name="endingTime">End time:</string>
+    <string name="projector">Projector?</string>
+    <string name="confirm">Confirm</string>
+    <string name="not_used">Not used</string>
+    <string name="lab_35">Lab. 35</string>
+    <string name="lab_37">Lab. 37</string>
+    <string name="lab_39">Lab. 39</string>
+    <string name="lab_41">Lab. 41</string>
+    <string name="lab_43">Lab. 43</string>
+</resources>
