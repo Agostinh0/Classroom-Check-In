@@ -4,4 +4,4 @@ Projeto de aplicativo para controle de empréstimo de chaves e projetores em sal
 Desenvolvimento de Aplicações Móveis - 2018.2
 Prof: Vanilson Burégio
 Departamento de Computação, Universidade Federal Rural de Pernambuco
-Aluno: Matheus Cavalcanti Agostinho
+Aluno: Matheus Cavalcanti Agostinho.
