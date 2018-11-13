@@ -12,6 +12,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name= "error">No user found</string>
     <string name="welcome_text">Which classroom are you taking today?</string>
     <string name="n35">35</string>
     <string name="n37">37</string>
@@ -30,4 +33,6 @@
     <string name="lab_39">Lab. 39</string>
     <string name="lab_41">Lab. 41</string>
     <string name="lab_43">Lab. 43</string>
+    <string name="settings">Settings</string>
+    <string name="nameToShow">Nome a ser exibido em assinaturas</string>
 </resources>

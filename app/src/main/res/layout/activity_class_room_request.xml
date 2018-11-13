@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ClassRoomRequestActivity">
+        tools:context=".activities.ClassRoomRequestActivity">
 
     <TextView
             android:text="@string/teacher"
@@ -80,7 +80,7 @@
             android:text="@string/confirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="268dp"
+            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="236dp"
             android:layout_marginTop="404dp" app:layout_constraintTop_toTopOf="parent"/>
     <TextView
             android:text="TextView"

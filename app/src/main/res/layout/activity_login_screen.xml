@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.LoginScreenActivity">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/tfLogin" android:layout_marginTop="280dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="84dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/tfPassword"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="84dp"
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/tfLogin"/>
+    <TextView
+            android:text="@string/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginTop="296dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="@string/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginTop="52dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"/>
+    <Button
+            android:text="@string/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="148dp"
+            android:layout_marginTop="40dp" app:layout_constraintTop_toBottomOf="@+id/tfPassword"/>
+</android.support.constraint.ConstraintLayout>

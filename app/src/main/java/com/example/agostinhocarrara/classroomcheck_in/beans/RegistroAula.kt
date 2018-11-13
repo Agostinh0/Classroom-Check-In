@@ -1,4 +1,4 @@
-package com.example.agostinhocarrara.classroomcheck_in
+package com.example.agostinhocarrara.classroomcheck_in.beans
 
 import java.util.*
 

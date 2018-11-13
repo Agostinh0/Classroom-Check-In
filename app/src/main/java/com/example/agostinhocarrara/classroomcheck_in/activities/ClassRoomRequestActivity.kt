@@ -1,8 +1,9 @@
-package com.example.agostinhocarrara.classroomcheck_in
+package com.example.agostinhocarrara.classroomcheck_in.activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.agostinhocarrara.classroomcheck_in.R
 import kotlinx.android.synthetic.main.activity_class_room_request.*
 
 class ClassRoomRequestActivity : AppCompatActivity() {

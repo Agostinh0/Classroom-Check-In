@@ -1,4 +1,4 @@
-package com.example.agostinhocarrara.classroomcheck_in
+package com.example.agostinhocarrara.classroomcheck_in.beans
 
 class Recepcionista{
     var nome: String? = null

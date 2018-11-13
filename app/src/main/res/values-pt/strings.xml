@@ -12,6 +12,9 @@
     <string name="error_field_required">Este campo é obrigatório</string>
     <string name="permission_rationale">"Permissões de contatos são necessárias para prover conclusão de e-mail."
     </string>
+    <string name="login">Login</string>
+    <string name="password">Senha</string>
+    <string name= "error">Nenhum usuário encontrado</string>
     <string name="welcome_text">Qual sala de aula irá escolher hoje?</string>
     <string name="n35">35</string>
     <string name="n37">37</string>
@@ -30,4 +33,6 @@
     <string name="lab_39">Lab. 39</string>
     <string name="lab_41">Lab. 41</string>
     <string name="lab_43">Lab. 43</string>
+    <string name="settings">Preferências</string>
+    <string name="nameToShow">Nome a ser exibido em assinaturas</string>
 </resources>

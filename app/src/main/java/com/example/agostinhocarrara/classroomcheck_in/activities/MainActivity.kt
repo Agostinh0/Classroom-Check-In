@@ -1,8 +1,9 @@
-package com.example.agostinhocarrara.classroomcheck_in
+package com.example.agostinhocarrara.classroomcheck_in.activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.agostinhocarrara.classroomcheck_in.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -40,5 +41,11 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("lab", "Lab. 43")
             startActivityForResult(intent, 1)
         }
+
+        btnSettings.setOnClickListener{
+            val intent = Intent(this, PreferencesActivity::class.java)
+            startActivityForResult(intent, 1)
+        }
+
     }
 }
