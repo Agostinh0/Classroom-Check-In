@@ -3,15 +3,12 @@ package com.example.agostinhocarrara.classroomcheck_in.activities
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import com.example.agostinhocarrara.classroomcheck_in.R
 import com.example.agostinhocarrara.classroomcheck_in.adapters.ProfessorAdapter
 import com.example.agostinhocarrara.classroomcheck_in.beans.Professor
+import kotlinx.android.synthetic.main.activity_list_view.*
 
 class ListViewActivity : AppCompatActivity() {
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var viewAdapter: RecyclerView.Adapter<*>
-    private lateinit var viewManager: RecyclerView.LayoutManager
 
     val teachers: ArrayList<Professor> = ArrayList()
 
@@ -19,57 +16,25 @@ class ListViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_view)
 
-        this.recyclerView = findViewById(R.id.recycler) as RecyclerView
-        var mLayoutManager = LinearLayoutManager(this)
-        this.recyclerView.setLayoutManager(mLayoutManager)
+        addTeachers()
 
-        var adapter = ProfessorAdapter(recyclerView)
-        this.recyclerView.setAdapter(adapter)
+        recycler.layoutManager = LinearLayoutManager(this)
+
+
+        recycler.adapter = ProfessorAdapter(teachers, this)
 
         addTeachers()
         }
 
     fun addTeachers(){
-        teachers.add(
-            Professor(
-                "José",
-                "Silva",
-                "josesilva",
-                "12345"
-            )
-        )
-        teachers.add(
-            Professor(
-                "João",
-                "Souza",
-                "joaosouza",
-                "98765"
-            )
-        )
-        teachers.add(
-            Professor(
-                "Pedro",
-                "Lima",
-                "pedrolima",
-                "13579"
-            )
-        )
-        teachers.add(
-            Professor(
-                "Roberto",
-                "de Moura",
-                "robertodemoura",
-                "24680"
-            )
-        )
-        teachers.add(
-            Professor(
-                "Paulo",
-                "Miranda",
-                "paulomiranda",
-                "45361"
-            )
-        )
+        var profUm = Professor("José", "Silva", "josesilva", "1234")
+        teachers.add(profUm)
+        var profDois =  Professor("João", "Souza", "joaosouza", "9876")
+        teachers.add(profDois)
+        var profTres = Professor("Paulo", "Santos", "paulosantos", "5647")
+        teachers.add(profTres)
+        var profQuatro = Professor("Renato", "de Moura", "renatodemoura", "4536")
+        teachers.add(profQuatro)
     }
 
     }
