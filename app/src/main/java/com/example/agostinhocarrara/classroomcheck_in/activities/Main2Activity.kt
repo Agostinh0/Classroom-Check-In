@@ -12,27 +12,7 @@ class Main2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        btn35.setOnClickListener{
-            val intent = Intent(this, ListViewActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn37.setOnClickListener{
-            val intent = Intent(this, ListViewActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn39.setOnClickListener{
-            val intent = Intent(this, ListViewActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn41.setOnClickListener{
-            val intent = Intent(this, ListViewActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn43.setOnClickListener{
+        btnHistory.setOnClickListener{
             val intent = Intent(this, ListViewActivity::class.java)
             startActivity(intent)
         }

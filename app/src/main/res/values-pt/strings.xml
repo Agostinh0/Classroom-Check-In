@@ -35,4 +35,5 @@
     <string name="lab_43">Lab. 43</string>
     <string name="settings">Preferências</string>
     <string name="nameToShow">Nome a ser exibido em assinaturas</string>
+    <string name="history">Ver assinaturas</string>
 </resources>

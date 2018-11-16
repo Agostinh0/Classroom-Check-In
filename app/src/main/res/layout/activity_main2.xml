@@ -12,66 +12,37 @@
             android:layout_width="wrap_content"
             android:layout_height="37dp"
             android:id="@+id/button7" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="92dp"
-            android:layout_marginTop="332dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="308dp" app:layout_constraintTop_toTopOf="parent"
             android:backgroundTint="@android:color/holo_green_light"/>
     <Button
             android:text="@string/not_used"
             android:layout_width="wrap_content"
             android:layout_height="37dp"
-            android:id="@+id/button6" android:layout_marginTop="380dp"
+            android:id="@+id/button6" android:layout_marginTop="452dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="280dp" android:backgroundTint="@android:color/holo_green_light"/>
+            android:layout_marginStart="92dp" android:backgroundTint="@android:color/holo_green_light"/>
     <Button
             android:text="@string/not_used"
             android:layout_width="wrap_content"
             android:layout_height="37dp"
             android:id="@+id/button5"
             android:backgroundTint="@android:color/holo_green_light"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="280dp"
-            android:layout_marginTop="336dp" app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="92dp"
+            android:layout_marginTop="416dp" app:layout_constraintTop_toTopOf="parent"/>
     <Button
             android:text="@string/not_used"
             android:layout_width="wrap_content"
             android:layout_height="37dp"
-            android:id="@+id/button4" android:layout_marginTop="404dp"
+            android:id="@+id/button4" android:layout_marginTop="380dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="92dp" android:backgroundTint="@android:color/holo_green_light"/>
     <Button
-            android:text="@string/n35"
-            android:layout_width="72dp"
+            android:text="@string/history"
+            android:layout_width="192dp"
             android:layout_height="wrap_content"
-            android:id="@+id/btn35" android:layout_marginTop="148dp"
+            android:id="@+id/btnHistory" android:layout_marginTop="156dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="52dp"/>
-    <Button
-            android:text="@string/n37"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn37" android:layout_marginTop="148dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/btn35"
-            android:layout_marginStart="32dp"/>
-    <Button
-            android:text="@string/n39"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn39" app:layout_constraintStart_toEndOf="@+id/btn37"
-            android:layout_marginStart="32dp" android:layout_marginTop="148dp"
-            app:layout_constraintTop_toTopOf="parent"/>
-    <Button
-            android:text="@string/n41"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn41" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="96dp"
-            android:layout_marginTop="220dp"
-            app:layout_constraintTop_toTopOf="parent"/>
-    <Button
-            android:text="@string/n43"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn43"
-            app:layout_constraintStart_toEndOf="@+id/btn41" android:layout_marginStart="48dp"
-            android:layout_marginTop="220dp"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginStart="92dp"/>
     <ImageView
             android:layout_width="42dp"
             android:layout_height="42dp" tools:srcCompat="@tools:sample/avatars"
@@ -90,37 +61,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView6" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
-            android:layout_marginTop="336dp" app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginTop="316dp" app:layout_constraintTop_toTopOf="parent"/>
     <TextView
             android:text="@string/lab_37"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView7" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
-            android:layout_marginTop="372dp" app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginTop="352dp" app:layout_constraintTop_toTopOf="parent"/>
     <TextView
             android:text="@string/lab_39"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView8" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
-            android:layout_marginTop="408dp" app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginTop="388dp" app:layout_constraintTop_toTopOf="parent"/>
     <TextView
             android:text="@string/lab_41"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView9" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="228dp"
-            android:layout_marginTop="344dp" app:layout_constraintTop_toTopOf="parent"/>
+            android:id="@+id/textView9" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
+            android:layout_marginTop="424dp" app:layout_constraintTop_toTopOf="parent"/>
     <TextView
             android:text="@string/lab_43"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView10" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="228dp" android:layout_marginTop="388dp"
+            android:layout_marginStart="24dp" android:layout_marginTop="460dp"
             app:layout_constraintTop_toTopOf="parent"/>
     <Button
             android:text="@string/not_used"
             android:layout_width="wrap_content"
             android:layout_height="37dp"
-            android:id="@+id/button3" android:layout_marginTop="368dp"
+            android:id="@+id/button3" android:layout_marginTop="344dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="92dp" android:backgroundTint="@android:color/holo_green_light"/>
 </android.support.constraint.ConstraintLayout>

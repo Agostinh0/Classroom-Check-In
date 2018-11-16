@@ -13,8 +13,8 @@ import kotlinx.android.synthetic.main.item_professor.view.*
 class ProfessorAdapter(val items: ArrayList<Professor>, val context: Context): RecyclerView.Adapter<ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
-        val tvNome = view.tvName
-        val tvSobrenome = view.tvLasname
+        val tvNome = view.tvName!!
+        val tvSobrenome = view.tvLasname!!
 
     }
 
@@ -24,8 +24,8 @@ class ProfessorAdapter(val items: ArrayList<Professor>, val context: Context): R
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if(holder is ViewHolder){
-            holder?.tvNome?.text = items.get(position).nome.toString()
-            holder?.tvSobrenome?.text = items.get(position).sobrenome.toString()
+            holder.tvNome.setText(items.get(position).nome.toString())
+            holder.tvSobrenome.setText(items.get(position).sobrenome.toString())
         }
     }
 
