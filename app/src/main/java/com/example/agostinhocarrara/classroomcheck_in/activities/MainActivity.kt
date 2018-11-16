@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnHistory.setOnClickListener{
+        btn35.setOnClickListener{
             val intent = Intent(this, ClassRoomRequestActivity::class.java)
             intent.putExtra("lab", "Lab. 35")
             startActivityForResult(intent, 1)

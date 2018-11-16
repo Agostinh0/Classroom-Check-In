@@ -18,7 +18,7 @@
             android:text="@string/n35"
             android:layout_width="72dp"
             android:layout_height="wrap_content"
-            android:id="@+id/btnHistory" android:layout_marginTop="148dp"
+            android:id="@+id/btn35" android:layout_marginTop="148dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="156dp" android:backgroundTint="@android:color/holo_green_light"/>
     <Button
@@ -26,14 +26,15 @@
             android:layout_width="72dp"
             android:layout_height="wrap_content"
             android:id="@+id/btn37" android:layout_marginTop="148dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/btnHistory"
-            android:layout_marginStart="32dp" android:backgroundTint="@android:color/holo_green_light"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="260dp" android:backgroundTint="@android:color/holo_green_light"
+            app:layout_constraintStart_toStartOf="parent"/>
     <Button
             android:text="@string/n39"
             android:layout_width="72dp"
             android:layout_height="wrap_content"
             android:id="@+id/btn39" app:layout_constraintStart_toEndOf="@+id/btn37"
-            android:layout_marginStart="32dp" android:layout_marginTop="148dp"
+            android:layout_marginStart="44dp" android:layout_marginTop="148dp"
             app:layout_constraintTop_toTopOf="parent" android:backgroundTint="@android:color/holo_green_light"/>
     <Button
             android:text="@string/n41"
