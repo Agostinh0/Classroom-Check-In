@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <TextView
+            android:text="@string/teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp" android:layout_marginTop="124dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16" app:layout_constraintStart_toEndOf="@+id/textView15"
+            android:layout_marginStart="20dp" android:layout_marginTop="124dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="@string/startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp" android:layout_marginTop="188dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="@string/endingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView18" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp" android:layout_marginTop="224dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tfLab" android:text="Lab:" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp" android:layout_marginTop="156dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView20" android:layout_marginTop="156dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/tfLab"
+            android:layout_marginStart="48dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            app:layout_constraintStart_toEndOf="@+id/textView17" android:layout_marginStart="8dp"
+            android:layout_marginTop="188dp" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView22" app:layout_constraintStart_toEndOf="@+id/textView18"
+            android:layout_marginStart="16dp" android:layout_marginTop="224dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="@string/projector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp" android:layout_marginTop="264dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView24" app:layout_constraintStart_toEndOf="@+id/textView23"
+            android:layout_marginStart="8dp" android:layout_marginTop="264dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>
