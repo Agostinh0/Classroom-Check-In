@@ -2,80 +2,74 @@ package com.example.agostinhocarrara.classroomcheck_in.activities
 
 import android.os.Build
 import android.os.Bundle
-import android.support.annotation.RequiresApi
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import com.example.agostinhocarrara.classroomcheck_in.R
 import com.example.agostinhocarrara.classroomcheck_in.adapters.RegistroAdapter
-import com.example.agostinhocarrara.classroomcheck_in.beans.Professor
 import com.example.agostinhocarrara.classroomcheck_in.beans.RegistroAula
-import com.example.agostinhocarrara.classroomcheck_in.fragments.RecordDetailsFragment
+
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_list_view.*
-import java.time.LocalDate
-import java.time.LocalTime
 
 class ListViewActivity : AppCompatActivity() {
 
+    var aulas: ArrayList<RegistroAula> = ArrayList()
 
-    val aulas: ArrayList<RegistroAula> = ArrayList()
-
-    val profUm = Professor("José", "Silva", "josesilva", "1234")
-
-    var profDois =  Professor("João", "Souza", "joaosouza", "9876")
-
-    var profTres = Professor("Paulo", "Santos", "paulosantos", "5647")
-
-    var profQuatro = Professor("Renato", "de Moura", "renatodemoura", "4536")
-
-    @RequiresApi(Build.VERSION_CODES.O)
-    fun initSignatures(){
-        val registroUm = RegistroAula(profUm, LocalDate.of(2018, 12, 3),
-        LocalTime.of(14, 0), LocalTime.of(16, 0), true, 35)
-
-        aulas.add(registroUm)
-
-        val registroDois = RegistroAula(profDois, LocalDate.of(2018, 12, 3),
-            LocalTime.of(16, 0), LocalTime.of(18, 0), false, 37)
-
-        aulas.add(registroDois)
-
-        val registroTres = RegistroAula(profTres, LocalDate.of(2018, 12, 3),
-            LocalTime.of(16, 0), LocalTime.of(18, 0), true, 39)
-
-        aulas.add(registroTres)
-
-        val registroQuatro = RegistroAula(profQuatro, LocalDate.of(2018, 12, 3),
-            LocalTime.of(14, 0), LocalTime.of(16, 0), false, 41)
-
-        aulas.add(registroQuatro)
-
-    }
-
+    var firebaseDatabase: FirebaseDatabase? = null
+    var dbRef: DatabaseReference? = null
+    var recordAdapter: RegistroAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_view)
 
-        recycler.layoutManager = LinearLayoutManager(this)
+        firebaseDatabase = FirebaseDatabase.getInstance()
+        dbRef = firebaseDatabase!!.getReference()
 
+        recordAdapter = RegistroAdapter(aulas, this)
+        recycler.adapter = recordAdapter
 
-        recycler.adapter = RegistroAdapter(aulas, this)
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            initSignatures()
+        if (FirebaseDatabase.getInstance() == null) {
+            FirebaseDatabase.getInstance().setPersistenceEnabled(true)
         }
 
-        //val fragment: RecordDetailsFragment = RecordDetailsFragment.newInstance()
-        //replaceFragment(fragment)
+        recycler.layoutManager = LinearLayoutManager(this)
 
+        getDataFromFirebase()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            // initSignatures()
+        }
     }
 
-    private fun replaceFragment(fragment: Fragment){
-        val fragmentTransaction = supportFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragmentContainer, fragment)
-        fragmentTransaction.commit()
-    }
 
+
+    fun getDataFromFirebase(){
+        val newReference = firebaseDatabase!!.getReference("registros")
+
+        newReference.addValueEventListener(object: ValueEventListener{
+            override fun onCancelled(p0: DatabaseError) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+
+            override fun onDataChange(p0: DataSnapshot) {
+                aulas.clear()
+
+                for(snapshot in p0.children){
+                    val hashMap = snapshot.value as HashMap<Any, String>
+                    val hashMap3: HashMap<Any, Boolean> = snapshot.value as HashMap<Any, Boolean>
+                    if(hashMap.size > 0){
+                        val registro = RegistroAula(hashMap["id"]!!, hashMap["professor"]!!, hashMap["dia"]!!,
+                            hashMap["startTime"]!!, hashMap["endTime"]!!, hashMap["usingProjector"]!!.toBoolean(),
+                            hashMap["lab"]!!, hashMap3["aprovado"]!!)
+
+                        aulas.add(registro)
+
+                        recordAdapter!!.notifyDataSetChanged()
+                    }
+                }
+            }
+
+        })
     }
+}

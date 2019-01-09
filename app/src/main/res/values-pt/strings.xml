@@ -36,4 +36,10 @@
     <string name="settings">Preferências</string>
     <string name="nameToShow">Nome a ser exibido em assinaturas</string>
     <string name="history">Ver assinaturas</string>
+    <string name="warning">Por favor, selecione "Professor" ou "Recepcionista"</string>
+    <string name="swTeacher">Professor</string>string>
+    <string name="swRecep">Recepcionista</string>
+    <string name="signUp">Criar conta</string>
+    <string name= "requestCreated">Solicitação enviada</string>
+    <string name="somethingWrong">Algo deu errado</string>
 </resources>

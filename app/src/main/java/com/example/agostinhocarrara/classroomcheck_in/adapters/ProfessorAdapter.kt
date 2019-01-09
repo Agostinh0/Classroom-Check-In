@@ -25,7 +25,7 @@ class ProfessorAdapter(val items: ArrayList<Professor>, val context: Context): R
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if(holder is ViewHolder){
             holder.tvNome.setText(items.get(position).nome.toString())
-            holder.tvSobrenome.setText(items.get(position).sobrenome.toString())
+            //holder.tvSobrenome.setText(items.get(position).sobrenome.toString())
         }
     }
 

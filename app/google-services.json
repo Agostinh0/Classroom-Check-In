@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "375285339426",
+    "firebase_url": "https://classroomcheckin.firebaseio.com",
+    "project_id": "classroomcheckin",
+    "storage_bucket": "classroomcheckin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375285339426:android:24649ccd605ac099",
+        "android_client_info": {
+          "package_name": "com.example.agostinhocarrara.classroomcheck_in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375285339426-gksqp0tq3f3t70skunde2ivi7ue4qq6i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.agostinhocarrara.classroomcheck_in",
+            "certificate_hash": "7dff789a43af322421b36bdc32aaf47baaddbed5"
+          }
+        },
+        {
+          "client_id": "375285339426-peu857l60l00edm20jdejcuea3rioie7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6qToGknBiE3xW5_ORpvY7bTw4BLDY6SE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375285339426-peu857l60l00edm20jdejcuea3rioie7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

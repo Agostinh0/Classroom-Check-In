@@ -36,4 +36,10 @@
     <string name="settings">Settings</string>
     <string name="nameToShow">Name to show on signatures</string>
     <string name="history">View past signatures</string>
+    <string name="warning">Please, select "Teacher" or "Receptionist"</string>string>
+    <string name="swTeacher">Teacher</string>
+    <string name="swRecep">Receptionist</string>
+    <string name="signUp">Sign Up</string>
+    <string name="requestCreated">Request sent</string>
+    <string name="somethingWrong">Something went wrong</string>
 </resources>
