@@ -12,7 +12,7 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:id="@+id/listRoot">
         <TextView
-                android:text="Teacher: "
+                android:text="@string/teacher"
                 android:textColor="#ff0051"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/tvTeacher" android:textSize="20sp"/>
@@ -25,9 +25,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/tvDate"/>
         <TextView
-                android:text="Time:"
+                android:text="@string/startTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tvTime"/>
+        <TextView
+                android:text="@string/endingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvEndTime"/>
         <TextView
                 android:text="Projector?"
                 android:layout_width="match_parent"

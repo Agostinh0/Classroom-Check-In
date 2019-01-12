@@ -54,7 +54,7 @@ class ClassRoomRequestActivity : AppCompatActivity() {
                 val recordId = dbRef!!.push().key
 
                 val registro: RegistroAula = RegistroAula(recordId!!, professor.nome, tvDate.text.toString() , tfStartTime.text.toString(),
-                    tfEndTime.text.toString(), projectorSwitch.isChecked, tvClassroom.text.toString(), false)
+                    tfEndTime.text.toString(), projectorSwitch.isChecked.toString(), tvClassroom.text.toString(), false.toString())
 
                     dbRef!!.child(recordId).setValue(registro).addOnCompleteListener{
                         Toast.makeText(this@ClassRoomRequestActivity, R.string.requestCreated, Toast.LENGTH_SHORT).show()

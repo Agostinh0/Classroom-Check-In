@@ -8,94 +8,25 @@
         tools:context=".activities.Main2Activity">
 
     <Button
+            android:text="@string/history2"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content" android:id="@+id/btnHistory3"
+            android:layout_marginTop="180dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="196dp"/>
+    <Button
             android:text="@string/history"
             android:layout_width="199dp"
             android:layout_height="53dp"
             android:id="@+id/btnHistory" android:layout_marginTop="72dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="196dp"/>
-    <ImageView
-            android:layout_width="42dp"
-            android:layout_height="42dp" tools:srcCompat="@tools:sample/avatars"
-            android:id="@+id/ivUser"
-            android:layout_marginTop="12dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="476dp"/>
     <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView5" app:layout_constraintStart_toEndOf="@+id/ivUser"
-            android:layout_marginStart="8dp" android:layout_marginTop="36dp"
-            app:layout_constraintTop_toTopOf="parent"/>
-    <Button
-            android:text="@string/not_used"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:id="@+id/btnState39" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="272dp"
-            android:layout_marginTop="168dp" app:layout_constraintTop_toTopOf="parent"
-            android:backgroundTint="@android:color/holo_green_light"/>
-    <Button
-            android:text="@string/not_used"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:id="@+id/btnState35" android:layout_marginTop="168dp"
+            android:id="@+id/textView5"
+            android:layout_marginTop="32dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="92dp" android:backgroundTint="@android:color/holo_green_light"/>
-    <Button
-            android:text="@string/not_used"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:id="@+id/btnState41"
-            android:backgroundTint="@android:color/holo_green_light"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="272dp"
-            android:layout_marginTop="216dp" app:layout_constraintTop_toTopOf="parent"/>
-    <Button
-            android:text="@string/not_used"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:id="@+id/btnState43"
-            android:backgroundTint="@android:color/holo_green_light"
-            android:layout_marginTop="168dp"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="432dp"
-            app:layout_constraintStart_toStartOf="parent"/>
-    <Button
-            android:text="@string/not_used"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:id="@+id/btnState37" android:layout_marginTop="216dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="92dp" android:backgroundTint="@android:color/holo_green_light"/>
-    <TextView
-            android:text="@string/lab_35"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView6" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
-            android:layout_marginTop="176dp" app:layout_constraintTop_toTopOf="parent"/>
-    <TextView
-            android:text="@string/lab_37"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView7" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
-            android:layout_marginTop="224dp" app:layout_constraintTop_toTopOf="parent"/>
-    <TextView
-            android:text="@string/lab_39"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView8" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="216dp"
-            android:layout_marginTop="176dp" app:layout_constraintTop_toTopOf="parent"/>
-    <TextView
-            android:text="@string/lab_41"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView9" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="216dp"
-            android:layout_marginTop="224dp" app:layout_constraintTop_toTopOf="parent"/>
-    <TextView
-            android:text="@string/lab_43"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView10" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="380dp" android:layout_marginTop="176dp"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginStart="516dp"/>
 </android.support.constraint.ConstraintLayout>

@@ -16,5 +16,10 @@ class Main2Activity : AppCompatActivity() {
             val intent = Intent(this, ListViewActivity::class.java)
             startActivity(intent)
         }
+
+        btnHistory2.setOnClickListener{
+            val intent = Intent(this, ListView2Activity::class.java)
+            startActivity(intent)
+        }
     }
 }
