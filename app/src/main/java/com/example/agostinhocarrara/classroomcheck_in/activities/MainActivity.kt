@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.agostinhocarrara.classroomcheck_in.R
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -46,6 +47,8 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, PreferencesActivity::class.java)
             startActivityForResult(intent, 1)
         }
+
+        tvUser.setText(FirebaseAuth.getInstance().currentUser!!.email)
 
     }
 }

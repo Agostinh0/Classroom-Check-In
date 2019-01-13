@@ -48,5 +48,7 @@
     <string name="didntUseProjector">Did not use projector</string>
     <string name="history2">View signatures</string>
     <string name="decision">What will you do to this request?</string>
+    <string name="current">Current:</string>
+    <string name="saved">Changes saved succesfully!</string>
 
 </resources>

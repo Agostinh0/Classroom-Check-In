@@ -48,4 +48,6 @@
     <string name="didntUseProjector">Não usou projetor</string>
     <string name="history2">Ver assinaturas</string>
     <string name="decision">O que deseja fazer com esta solicitação?</string>
+    <string name="current">Atual:</string>
+    <string name="saved">Mudanças salvas com sucesso!</string>
 </resources>

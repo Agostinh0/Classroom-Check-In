@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText3" android:layout_marginStart="32dp"
+            android:id="@+id/prefName" android:layout_marginStart="32dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="12dp"
             app:layout_constraintTop_toBottomOf="@+id/textView13"/>
     <TextView
@@ -33,6 +33,20 @@
             android:text="@string/confirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button8" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="48dp"
+            android:id="@+id/btnSavePref" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="48dp"
             android:layout_marginTop="400dp" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="@string/current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentName" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" android:layout_marginTop="224dp"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDisplayName" android:layout_marginTop="224dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="108dp" android:textSize="18sp"/>
 </android.support.constraint.ConstraintLayout>

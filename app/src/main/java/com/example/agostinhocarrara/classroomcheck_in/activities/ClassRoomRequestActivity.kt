@@ -1,6 +1,11 @@
 package com.example.agostinhocarrara.classroomcheck_in.activities
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
+import android.location.Location
+import android.location.LocationListener
+import android.location.LocationManager
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -24,10 +29,35 @@ class ClassRoomRequestActivity : AppCompatActivity() {
     var database: FirebaseDatabase = FirebaseDatabase.getInstance()
     var dbRef: DatabaseReference? = database.getReference("messsage")
 
+    private lateinit var locationManager: LocationManager
+    private lateinit var locationListener: LocationListener
+
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_class_room_request)
+
+        locationManager = this.getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        locationListener = object: LocationListener{
+            override fun onLocationChanged(p0: Location?) {
+                Toast.makeText(this@ClassRoomRequestActivity, p0.toString(), Toast.LENGTH_SHORT).show()
+            }
+
+            override fun onStatusChanged(p0: String?, p1: Int, p2: Bundle?) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+
+            override fun onProviderEnabled(p0: String?) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+
+            override fun onProviderDisabled(p0: String?) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+
+        }
+
+        //locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener)
 
         //Firebase
         mAuth = FirebaseAuth.getInstance()
@@ -39,6 +69,7 @@ class ClassRoomRequestActivity : AppCompatActivity() {
         val laboratorio: String = intent.getStringExtra("lab")
 
         //definindo valores padrão
+        textViewTeacher.setText(FirebaseAuth.getInstance().currentUser!!.displayName)
         tvClassroom.setText(laboratorio)
         tvDate.setText(LocalDate.now().toString())
 
@@ -47,8 +78,9 @@ class ClassRoomRequestActivity : AppCompatActivity() {
         val uuidString = uuid.toString()
 
 
+
         btnConfirm.setOnClickListener{
-            val professor: Professor = Professor(tfTeacher.text.toString())
+            val professor: Professor = Professor(textViewTeacher.text.toString())
 
             try{
                 val recordId = dbRef!!.push().key
